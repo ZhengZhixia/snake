@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script src="index.js"></script>
+	<style>
+	.box{
+		position: fixed;
+		left:0;
+		right:0;
+		top:0;
+		bottom: 0;
+		margin: auto;
+		
+		background: url("bg.jpg") ;
+		background-size: cover; 
+	}
+	.screen{
+		width: 600px;
+		height: 600px;
+		position: absolute;
+		left:0;
+		right:0;
+		top:0;
+		bottom: 0;
+		margin: auto;
+		background: #fff;
+	}
+	.block{
+		width: 30px;
+		height: 30px;
+		float:left;
+		
+	}
+	.she{
+		width: 30px;
+		height: 30px;
+		background:url(1.jpg) no-repeat;
+		background-size: cover;
+	}
+	.shiwu{
+		width: 30px;
+		height: 30px;
+		background:url(shiwu.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	.start,.pause,.restart{
+		width: 152px;
+		height: 48px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left:-162px;
+		margin-top:300px;
+		background-image: url('zt.png');
+	}
+	.start{
+        background-image: url('start.png');
+        margin-top:200px;
+	}
+	.restart{
+		background-image: url('restart.png');
+		margin-top:400px;
+	}
+	.fen-box{
+		position: absolute;
+		right:-210px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 200px;
+	    height:80px;
+	    line-height: 80px;
+	    background: #fff;
+	    border-radius: 10px;
+	    box-shadow:inset 1px 1px 5px 5px #ccc;
+	    text-align: center;
+	    font-size: 24px;
+	    font-weight:900;
+	}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="screen">
+		<div class="start"></div>
+		<div class="pause"></div>
+		<div class="restart">cx</div>
+		<div class="fen-box">
+			<span>得分:</span>
+			<span class='fen'>0</span>
+		</div>
+	</div>	
+</body>
+</html>
